@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Sparkles, BookOpen, Star, Heart, Info, AlertTriangle, Shield, Eye, Zap, MessageCircleHeart } from 'lucide-react';
+import { Sparkles, BookOpen, Star, Heart, Info, AlertTriangle, Shield, Eye, Zap, MessageCircleHeart, ExternalLink } from 'lucide-react';
 
 export default function App() {
   return (
@@ -86,6 +86,16 @@ export default function App() {
               <Star className="w-6 h-6 text-fuchsia-400 fill-fuchsia-400/20" />
               <h2 className="text-xl font-bold text-white tracking-tight">담당 성좌 소개</h2>
             </div>
+
+            <a 
+              href="https://posty.pe/5h6jpz" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 w-full py-3.5 px-4 bg-gradient-to-r from-fuchsia-600 to-purple-600 hover:from-fuchsia-500 hover:to-purple-500 text-white rounded-2xl font-bold transition-all shadow-lg shadow-fuchsia-900/30 active:scale-[0.98]"
+            >
+              <ExternalLink className="w-5 h-5" />
+              <span>이미지 모음 바로가기</span>
+            </a>
 
             <div className="relative aspect-[2/3] w-full rounded-3xl overflow-hidden shadow-2xl shadow-fuchsia-900/20 border border-fuchsia-500/20">
               <img 
